@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the application's JAR file to the container
-COPY target/single-module-project.jar /app/single-module-project.jar
+COPY maven-samples/single-module/target/single-module-project.jar /app/single-module-project.jar
 
 # Expose the port the application will run on (if needed)
 EXPOSE 8080
