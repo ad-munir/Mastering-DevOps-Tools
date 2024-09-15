@@ -21,6 +21,11 @@ public class TestGreeter {
   }
 
   @Test
+    public void fakeTest() {
+        assertTrue("This is a fake test that will always fail", false);
+    }
+  
+  @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
 
